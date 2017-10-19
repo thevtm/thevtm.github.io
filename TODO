@@ -1,0 +1,52 @@
+
+  __________  ____  ____
+ /_  __/ __ \/ __ \/ __ \
+  / / / / / / / / / / / /
+ / / / /_/ / /_/ / /_/ /
+/_/  \____/_____/\____/
+
+
+[x] Code
+  [x] Nav
+    [x] Fix mobile menu no opening
+     [x] Extensive description when in mobile view for icons
+     [x] Fix anchors
+  [x] About
+  [x] Porfolio
+  [x] Contact
+    [x] Connect to backend
+  [x] Footer
+
+[ ] Content
+  [x] Nav
+  [x] About
+    [ ] Profile Pic
+    [ ] Text
+  [x] Profile
+    [x] NdC
+    [x] Luderia Carmachia https://appworld.blackberry.com/webstore/content/22552882/?countrycode=BR&lang=en
+  [x] Contact
+  [x] Footer
+
+[ ] L Migrate to Github-Pages
+  [x] S Copy files
+    [x] S html
+    [x] S css
+    [x] S js
+    [x] S img
+  [ ] M Automate deployement
+  [ ] L Build system
+    [x] M Webpack
+      [x] S base config
+      [x] S pug -> html
+      [x] S postcss -> css
+      [x] S images
+      [x] S dev webserver
+    [ ] M Makefile
+      [x] S install
+      [x] S build dev
+      [x] S build prod
+      [x] S clean
+      [x] S dev webserver
+      [ ] M deployement
+  [x] S Ajust paths in html

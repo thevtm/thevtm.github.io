@@ -1,0 +1,183 @@
+/*
+ *    ________________
+ *   / ____/ ___/ ___/
+ *  / /    \__ \\__ \
+ * / /___ ___/ /__/ /
+ * \____//____/____/
+ */
+
+/* PALLETE */
+
+$color-primary: #5B46BA
+$color-primary-lightest: #A092E2
+$color-primary-light: #7966CD
+$color-primary-dark: #4129AD
+$color-primary-darkest: #2B168B
+
+$color-gray-darkest: gray(10%)
+$color-gray-dark: gray(12%)
+$color-gray: gray(25%)
+$color-gray-light: gray(90%)
+$color-gray-lightest: gray(95%)
+
+
+/* CONSTANTS */
+
+$nav-margin-top: 51px
+
+$portfolio-thumb-width-small: 420px
+$portfolio-thumb-heigth-small: 280px
+
+$portfolio-thumb-width-medium: 525px
+$portfolio-thumb-heigth-medium: 350px
+
+$portfolio-thumb-width-large: 600px
+$portfolio-thumb-heigth-large: 400px
+
+
+/* GLOBAL */
+
+
+/* SELECTIONS */
+
+body
+  background-color: $color-gray
+  padding-top: $nav-margin-top
+  font-size: 14px
+
+
+#header
+  background-color: $color-gray-dark
+  border-color: $color-gray-darkest
+
+  & .navbar-brand
+    color: $color-primary
+    // font-size: 1.5em
+
+  & nav
+    & a
+      color: $color-gray-light
+
+    & a:hover
+      background-color: $color-gray-light
+      color: $color-gray-dark
+
+
+.container > .row
+  padding: 20px
+  box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.2)
+
+
+#about
+  background-color: $color-primary-darkest
+  color: $color-primary-lightest
+
+  & img
+    margin: 10px auto
+    width: 250px
+
+  & h3
+    font-size: 1.5em
+
+  & hr
+    margin: 10px 20% 10px 0%
+    margin: 40px auto 30px
+    border-top: solid 4px
+
+  & p
+    font-size: 1.2em
+
+#portfolio hr, #contact hr
+  margin: 10px 30% 20px 30%
+  border-top: solid 4px
+
+
+#portfolio
+  background-color: $color-gray-light
+  color: $color-gray
+
+  & ul
+    display: flex
+    padding: 0px
+    margin: 0px
+    list-style: none
+    flex-flow: row wrap
+    justify-content: space-around
+
+  & li
+    margin: 20px
+    // flex-basis: auto // default value
+    flex-grow: 0
+
+    @media(min-width: 768px)
+      width: $portfolio-thumb-width-large
+      height: $portfolio-thumb-heigth-large
+
+    @media(min-width: 992px)
+      width: $portfolio-thumb-width-small
+      height: $portfolio-thumb-heigth-small
+
+    @media(min-width: 1200px)
+      width: $portfolio-thumb-width-medium
+      height: $portfolio-thumb-heigth-medium
+
+    & img
+      width: 100%
+      height: 100%
+
+    & > div
+      width: 100%
+      height: 100%
+
+      & .panel-heading
+        background-color: $color-primary
+        color: $color-primary-lightest
+
+  // Push last element to the left if num of elements is odd  */
+  // & li:last-child:nth-child(odd)
+  //   margin-right: auto
+
+  // & img
+  //   display: block
+  //   max-width: 420px
+  //   height: auto */
+
+
+
+#contact
+  background-color: $color-gray-light
+  color: $color-gray
+
+  // margin-top: 5px
+  // margin-left: 5px
+
+  & .form-item
+    margin: 10px 20px 0px 20px
+    border-bottom: 1px solid #bbb
+
+    & input, textarea
+      background-color: $color-gray-light
+      color: $color-gray
+      border: 0
+      border-radius: 0
+      box-shadow: none!important
+
+    & textarea
+      resize: none
+      min-height: 10em
+
+  & button
+    margin: 20px
+    background-color: $color-gray
+    color: $color-gray-light
+
+  // & #email
+  //  font-size: 1.25em
+  //  line-height: 34px
+
+
+#footer
+  padding: 20px
+  background-color: $color-gray-darkest
+  color: $color-gray-light
+  text-align: center

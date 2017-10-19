@@ -1,0 +1,134 @@
+doctype html
+
+html(lang="pt-br")
+
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+
+    link(rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css")
+    link(rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+    link(rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css")
+
+    title Vinícius Manjabosco Portfolio
+
+    link(rel="stylesheet" type="text/css" href="/bundle.css")
+
+
+  body
+
+    header#header.navbar.navbar-inverse.navbar-fixed-top
+
+      .container
+
+        .navbar-header
+
+          // Toggle collapse button
+          button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#nav', aria-expanded='false')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+
+          a.navbar-brand(href="#") Vinícius Manjabosco
+
+        nav#nav.collapse.navbar-collapse
+          ul.nav.navbar-nav.navbar-right
+            li
+              a.scrollable(href='#about') About
+
+            li
+              a.scrollable(href='#portfolio') Portfolio
+
+            li
+              a.scrollable(href='#contact') Contact
+
+            li
+              a(href="https://www.linkedin.com/in/thevtm/")
+                i.fa.fa-linkedin(aria-hidden="true")
+                span.visible-xs-inline  Linkedin
+
+            li
+              a(href="https://twitter.com/thevtm")
+                i.fa.fa-twitter(aria-hidden="true")
+                span.visible-xs-inline  Twitter
+
+            li
+              a(href="https://github.com/thevtm")
+                i.fa.fa-github(aria-hidden="true" style="font-size: 18px;")
+                span.visible-xs-inline  GitHub
+
+
+    main.container
+
+      section#about.row
+
+        .col-sm-8
+          h3 Hello! My name is Vinícius Manjabosco, I am a Full Stack  Web Developer and Software Developer with background in Game Development and Data Science; also a Kite and Tetris enthusiast.
+          hr
+          p Full Stack Web Developer - Software Developer - Game Developer - Data Scientist
+
+        .col-sm-4
+          //- Profile picture 250px 250px
+          img.img-circle.img-responsive.center-block(src="https://i.pinimg.com/originals/f7/b4/d9/f7b4d999768016f78985b4136864e7b2.gif" alt="My picture.")
+
+      section#portfolio.row
+
+        h1.text-center Portfolio
+
+        hr
+
+        ul
+
+          li
+            a(href="https://numerosdocartola.com/")
+              img(src='/img/portfolio-ndc-800x600.png', alt='')
+
+          li
+            a(href="https://itunes.apple.com/us/app/carmachia/id653573695?ls=1&mt=8")
+              img(src='/img/portfolio-carmachia-800x600.png', alt='')
+
+
+      section#contact.row
+
+        h1.text-center Contact
+        hr
+
+        form#contact-form(method="POST" action="http://formspree.io/tallibba@gmail.com")
+          .row
+            .col-sm-6
+              .form-item
+                //- label(for='“name”') Name
+                input#name.form-control(type="text" name="name" placeholder="Name")
+
+            .col-sm-6
+              .form-item
+                //- label(for='“email”') Email
+                input#email.form-control(type="email" name="email" placeholder="Email")
+
+          .row
+            .col-sm-12
+              .form-item
+                //- label(for='“message”') Message
+                textarea#message.form-control(type="text" name="message" placeholder="Message")
+
+          .row
+            .col-sm-12
+              button.btn.btn-primary(type='submit') Send
+
+    footer#footer
+      | Vinícius Tabille Manjabosco &copy
+      script.
+        document.write(new Date().getFullYear())
+      | . All Rights Reserved
+
+
+  //- SCRIPTS -//
+
+  script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+  script(src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js")
+
+  script(src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js")
+
+  script(src="/bundle.js")

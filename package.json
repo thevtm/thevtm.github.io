@@ -1,0 +1,35 @@
+{
+  "name": "github-page",
+  "version": "1.0.0",
+  "description": "My github page.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thevtm/thevtm.github.io.git"
+  },
+  "author": "Vinícius T. M.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thevtm/thevtm.github.io/issues"
+  },
+  "homepage": "https://github.com/thevtm/thevtm.github.io#readme",
+  "dependencies": {
+    "cssnano": "^3.10.0",
+    "file-loader": "^1.1.5",
+    "postcss": "^6.0.13",
+    "postcss-cssnext": "^3.0.2",
+    "postcss-import": "^11.0.0",
+    "postcss-loader": "^2.0.8",
+    "postcss-nested": "^2.1.2",
+    "postcss-simple-vars": "^4.1.0",
+    "pug": "^2.0.0-rc.4",
+    "pug-html-loader": "^1.1.5",
+    "raw-loader": "^0.5.1",
+    "sugarss": "^1.0.0",
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.2"
+  }
+}
